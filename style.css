@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;800&display=swap");
 
 :root {
   --bloodRed: #660708;
@@ -47,7 +48,7 @@ a {
 nav {
   font-family: "Cinzel", serif;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   width: 100%;
   background: var(--eerieBlackRGB);
   padding: 8px 30px;
@@ -104,7 +105,7 @@ nav ul li a:hover::after {
   color: #fff;
   cursor: pointer;
   position: absolute;
-  z-index: 99;
+  z-index: 99999;
   left: 20px;
   display: none;
 }
@@ -120,7 +121,7 @@ nav ul li a:hover::after {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 97;
+  /* z-index: 9999; */
   background: var(--richBlack);
   animation: menuSlide 0.4s linear;
 }
@@ -148,10 +149,10 @@ nav ul li a:hover::after {
   border: 8px double #fff;
 }
 
-.burgerShow a {
+/* .burgerShow a {
   position: relative;
-  z-index: 98;
-}
+  z-index: 9999;
+} */
 
 /* .burgerShow a:hover {
   text-decoration: underline var(--bloodRed);
@@ -613,7 +614,7 @@ footer::after {
 }
 
 footer a {
-  z-index: 99;
+  z-index: 9;
 }
 
 footer img {
@@ -623,6 +624,77 @@ footer img {
 
 footer p {
   color: #fff;
+}
+
+/********* About Page *********/
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  color: #fff;
+}
+
+.about {
+  height: 300vh;
+  display: flex;
+}
+
+.about-title {
+  width: 50%;
+  height: 100vh;
+  background-image: url(img/aboutTestBG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.about-title h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 0 60px;
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: 15px;
+  text-shadow: -3px 0 10px #000;
+}
+
+.aboutPages {
+  width: 50%;
+}
+
+.aboutPages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.aboutPages div > p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.aboutPages div:nth-child(1) {
+  background-color: #000;
+}
+.aboutPages div:nth-child(2) {
+  background-color: #fff;
+  color: #000;
+}
+.aboutPages div:nth-child(3) {
+  background-color: #000;
 }
 
 @media only screen and (max-width: 768px) {

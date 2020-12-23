@@ -1,0 +1,68 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  color: #fff;
+}
+
+.about {
+  height: 300vh;
+  display: flex;
+}
+
+.about-title {
+  width: 50%;
+  height: 100vh;
+  background-image: url(img/aboutTestBG2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.about-title h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 0 60px;
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: 15px;
+  text-shadow: -3px 0 10px #000;
+}
+
+.aboutPages {
+  width: 50%;
+}
+
+.aboutPages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.aboutPages div > p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.aboutPages div:nth-child(1) {
+  background-color: rgb(56, 134, 89);
+}
+.aboutPages div:nth-child(2) {
+  background-color: rgb(129, 42, 110);
+}
+.aboutPages div:nth-child(3) {
+  background-color: rgb(31, 88, 107);
+}

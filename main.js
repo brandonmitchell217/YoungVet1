@@ -13,25 +13,16 @@ function sizeFunction() {
   }
 }
 
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
-const container = document.getElementById("promoLandingWrap");
-const promoContent = document.querySelectorAll(".promoContentOverlay");
+function splitScroll() {
+  const controller = new ScrollMagic.Controller();
 
-left.addEventListener("mouseenter", () =>
-  container.classList.add("hover-left")
-);
-left.addEventListener("mouseleave", () =>
-  container.classList.remove("hover-left")
-);
-
-right.addEventListener("mouseenter", () =>
-  container.classList.add("hover-right")
-);
-right.addEventListener("mouseleave", () =>
-  container.classList.remove("hover-right")
-);
-
-$(function () {
-  $(".promoContentOverlay").simpleLightbox();
-});
+  new ScrollMagic.Scene({
+    duration: "200%",
+    triggerElement: ".about-title",
+    triggerHook: 0,
+  })
+    .setPin(".about-title")
+    // .addIndicators()
+    .addTo(controller);
+}
+splitScroll();
