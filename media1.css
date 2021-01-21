@@ -1,0 +1,355 @@
+.media {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-image: url(img/raleigh-downtown-sunset-2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; */
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#slider-area {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#slider-area .owl-item div {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#slider-area .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+#slider-area .item a {
+  padding: 15px 60px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: -10px -5px 20px -5px #fefefe;
+  transition: all 0.4s ease;
+} */
+
+#slider-area .item a:hover {
+  transform: scale(0.98);
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #000;
+  box-shadow: 0 0 30px -5px #fefefe;
+}
+
+#slider-area .owl-dots {
+  width: 300px;
+  height: 50px;
+  z-index: 11;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.wrapBtn {
+  position: relative;
+  font-family: serif;
+  font-size: 24px;
+  letter-spacing: 1.8px;
+  color: #eee;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-shadow: -1px 3px 8px #fefefe;
+  cursor: pointer;
+}
+
+#wrapBtn1 {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  transform: translate(-10%, -20%);
+}
+#wrapBtn2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform: translate(-10%, -20%);
+}
+
+.wrapBtn::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: #eee;
+  transition: all 0.3s ease;
+}
+
+.wrapBtn:hover::after {
+  bottom: 0;
+}
+
+.wrapLight {
+  height: 80vh;
+  width: 90%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.centerWrapLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: 2px solid #fff;
+  background: #000;
+}
+
+.wrapLightImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 6px;
+}
+
+.wrapLightImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.6);
+}
+
+.centerWrapLight h4 {
+  width: 100%;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.wrapLightBtn {
+  position: relative;
+  padding: 15px 60px;
+  margin: 10px 0;
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px -5px #eee;
+}
+
+.wrapLightBtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 90%;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+.wrapLightBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.wrapLightBtn:hover::before {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.outerOwl {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.outerOwl h1,
+.imageOuter h1 {
+  position: absolute;
+  top: 13%;
+  right: 0;
+  /* border-right: 6px solid var(--bloodRed); */
+  padding-right: 10px;
+  transform: translateY(-15%);
+  color: #eee;
+  font-size: 60px;
+  text-shadow: 5px 0 12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -10px -10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.outerOwl h1::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  border: 2px solid var(--bloodRed);
+  background: #000;
+}
+
+/* .imageOuter h1::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  border: 2px solid var(--bloodRed);
+  background: #000;
+} */
+.outerOwl h1::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  border: 2px solid var(--bloodRed);
+  background: #000;
+}
+
+.owlVidBox {
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  transition: all 0.4s ease-in-out;
+}
+
+.owlVidBox h4 {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 3px #eee;
+}
+.owlVidBox i {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1));
+}
+div a:hover .owlVidBox {
+  bottom: 0;
+}
+
+.imageOuter {
+  position: relative;
+  padding: 60px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageOuter h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translateY(-15%); */
+  padding-right: 0;
+  padding-left: 10px;
+  width: 200px;
+}
+
+.imageOuter h1::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  border: 2px solid var(--bloodRed);
+  background: #000;
+}
+
+.imageOuter h1::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  border: 2px solid var(--bloodRed);
+  background: #000;
+}
+
+.imageInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageInner img {
+  height: 275px;
+  width: auto;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #777;
+  cursor: pointer;
+}
+
+.imageInner img:hover {
+  transform: scale(0.98);
+}
+
+.imageInner div {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}

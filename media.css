@@ -1,0 +1,264 @@
+.mediaWrap {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 0;
+  background-image: url(img/raleigh-downtown-sunset-2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.videoCarousel {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureVid {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featureVid iframe {
+  border-radius: 10px;
+}
+
+.mediaVideos {
+  height: 650px;
+  width: 100%;
+  padding: 2.5em 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(11, 9, 10, 0.7) 1%,
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.8),
+    rgba(11, 9, 10, 0.7) 99%,
+    transparent
+  );
+  position: relative;
+  z-index: 3;
+}
+
+.mediaVideos h2 {
+  margin: 0 0 40px 0;
+  font-family: "Crimson Text", serif;
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 6px #888;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  color: #fff;
+}
+
+.griddle {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+  /* padding-top: 80px; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+.griddle:nth-of-type(1) {
+}
+
+/* .griddle:nth-of-type(2) {
+  margin-top: 50px;
+} */
+
+.gridVid {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+}
+
+.gridVid a {
+  position: relative;
+  overflow: hidden;
+}
+
+.gridVidBox h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 3px #eee;
+}
+
+/* .gridVid a::selection {
+  color: inherit;
+} */
+
+.gridVidBox {
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.gridVid a .gridVidBox i {
+  font-size: 3rem;
+  color: #fff;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1));
+  /* position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.gridVid a img {
+  max-width: 320px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 0 30px rgba(245, 243, 244, 0.6); */
+}
+
+/* .gridVid a:hover > .gridVidBox {
+  bottom: 0;
+} */
+
+.gridVid:hover img {
+  transform: scale(1.009);
+  /* box-shadow: 0 0 40px rgba(245, 243, 244, 0.6); */
+}
+
+@media only screen and (max-width: 992px) {
+  /* .mediaVideos {
+    height: 100%;
+    padding-top: 100px;
+  } */
+  .griddle {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gridVid {
+    margin-bottom: 10px;
+  }
+  .griddle {
+    flex-direction: column;
+  }
+  .griddle a img {
+    max-width: 90%;
+  }
+}
+
+.imgGallery {
+  /* height: 100vh; */
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.carousel img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.carousel {
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); */
+  /* 	height: 530px; */
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.85;
+}
+
+.carousel:hover {
+  opacity: 1;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  /* 	background-color: rgb(179, 25, 22); */
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  width: 49.5%;
+  opacity: 0.75;
+  font-family: inherit;
+  filter: drop-shadow(0 0 4px #000);
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  opacity: 1;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+}
+
+.btn:focus {
+  outline: none;
+}
