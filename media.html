@@ -19,25 +19,25 @@
       href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="lity/lity-2.4.1/dist/lity.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="media.css" />
 
     <title>Young Vet</title>
   </head>
   <body onresize="sizeFunction()">
     <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <img src="img/vetLogoOfficial1.png" alt="" />
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about1.html">About</a></li>
-        <li><a href="media1.html">Media</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <a href="index.html">
-        <img src="img/vetLogoOfficial1.png" alt="Young Vet" class="navLogo" />
-      </a>
-      <div class="burger" id="burger">
-        <i class="fas fa-bars fa-2x"></i>
-      </div>
     </nav>
 
     <section class="mediaWrap">
@@ -116,7 +116,7 @@
       
         </div>
       </div> -->
-      <section class="videoCarousel">
+      <!-- <section class="videoCarousel">
         <div class="owl-carousel owl-theme">
           <div class="gridVid">
             <a href="https://www.youtube.com/embed/dwph6kgfMKI" data-lity
@@ -159,9 +159,9 @@
             ></a>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <div class="imgGallery">
+      <!-- <div class="imgGallery">
         <div class="carousel">
           <div class="image-container" id="imgs">
             <img src="img/mediaImg/Vet.jpg" alt="first-image" />
@@ -184,9 +184,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <footer style="display: none;">
       <p>Built By Brandon.</p>
 
       <a href="index.html"
@@ -223,5 +223,6 @@
     <script src="lity/lity-2.4.1/dist/lity.min.js"></script>
     <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="main.js"></script>
+    <script src="main1.js"></script>
   </body>
 </html>

@@ -97,7 +97,7 @@
 
 .contactRight .contactInner h2 {
   font-family: "Crimson Text", serif;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
   color: #fff;
   position: relative;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
@@ -210,6 +210,12 @@ textarea::placeholder {
 .contactSocial a {
   font-size: 3rem;
   color: #000;
+}
+.contactSocial a:first-of-type:hover {
+  color: #3b5998;
+}
+.contactSocial a:last-of-type:hover {
+  color: var(--carnelianRed);
 }
 
 @media only screen and (max-width: 1200px) {

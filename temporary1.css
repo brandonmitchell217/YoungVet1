@@ -229,18 +229,15 @@ main .rectangle h2 span {
   text-align: center;
   color: var(--culturedRGB);
   border-radius: 30px;
-  border: 2px solid rgba(245, 243, 244, 0.2);
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 25px -5px rgba(245, 243, 244, 0.7);
+  background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 
 .toAbout:hover {
   transform: scale(1.025);
-  box-shadow: 0 0 50px -10px rgba(245, 243, 244, 0.7);
 }
 
-.toAbout::before {
+/* .toAbout::before {
   content: "";
   position: absolute;
   z-index: 5;
@@ -250,20 +247,8 @@ main .rectangle h2 span {
   width: 100%;
   border-radius: 30px;
   filter: blur(4px);
-}
+} */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
-.toAbout span {
-  position: relative;
-  z-index: 6;
-  font-family: "Amatic SC", cursive;
-  font-size: 24px;
-  letter-spacing: 3px;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-  transition: all 0.3s ease-in-out;
-}
-.toAbout:hover span {
-  font-size: 26px;
-}
 
 .aboutArrows {
   display: flex;

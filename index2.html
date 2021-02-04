@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/4ff7ddc04a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="lity/lity-2.4.1/dist/lity.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="temporary.css" />
+    <title>Young Vet</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="media1.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="index.html">
+        <img src="img/vetLogoOfficial1.png" alt="Young Vet" class="navLogo" />
+      </a>
+      <div class="burger" id="burger">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </nav>
+    <section class="homeLanding">
+      <div class="landingInner"></div>
+    </section>
+    <section class="homeCarWrapper">
+      <div class="carWrapOuter">
+        <div id="slider-area" class="owl-carousel">
+          <div style="background-image: url(img/mediaImg/VetHome3.jpg)">
+            <button class="wrapBtn" id="pacBtn">Video / Stream</button>
+          </div>
+          <div style="background-image: url(img/mediaImg/VetHome5.jpg)">
+            <button class="wrapBtn" id="talkToEmBtn">Video / Stream</button>
+          </div>
+        </div>
+        <div class="wrapLight" id="wrapLight1">
+          <button class="wrapCloseBtn" id="wrapCloseBtn1">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="centerWrapLight">
+            <div class="wrapLightImg">
+              <img src="img/pacmanVet.jpg" alt="" />
+            </div>
+            <h4>Pacman</h4>
+            <a href="#" class="wrapLightBtn"
+              ><i class="fab fa-itunes"></i> iTunes</a
+            >
+            <a href="#" class="wrapLightBtn"
+              ><i class="fab fa-spotify"></i> Spotify</a
+            >
+          </div>
+        </div>
+        <div class="wrapLight" id="wrapLight2">
+          <button class="wrapCloseBtn" id="wrapCloseBtn2">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="centerWrapLight">
+            <div class="wrapLightImg">
+              <img src="img/mediaImg/talkToEmThumb.jpg" alt="" />
+            </div>
+            <h4>Talk To Em</h4>
+            <a href="#" class="wrapLightBtn"
+              ><i class="fab fa-itunes"></i> iTunes</a
+            >
+            <a href="#" class="wrapLightBtn"
+              ><i class="fab fa-spotify"></i> Spotify</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lity/lity-2.4.1/dist/lity.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+    <script src="main1.js"></script>
+    <script>
+      const pacBtn = document.getElementById("pacBtn");
+
+      pacBtn.addEventListener("click", () => {
+        pacBtn.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

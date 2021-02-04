@@ -1,7 +1,148 @@
-.mediaWrap {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   width: 100%;
-  padding-bottom: 100px;
+  padding: 2rem 0;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  background: var(--eerieBlackRGB);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px -2px var(--eerieBlackRGB);
+}
+
+nav img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 50px;
+  width: auto;
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+}
+nav img:hover {
+  opacity: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  position: relative;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+nav ul li a::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: var(--rubyRed);
+  border-radius: 5px;
+  position: absolute;
+  bottom: -0.1rem;
+  left: -0.1rem;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1118px) {
+  /* nav img {
+    left: 8%;
+  } */
+}
+@media (max-width: 944px) {
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 860px) {
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: -150%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+    position: absolute;
+    right: 20px;
+    z-index: 100;
+  }
+}
+
+.mediaWrap {
+  height: 100vh;
+  width: 100%;
+
   position: relative;
   z-index: 0;
   background-image: url(img/raleigh-downtown-sunset-2.jpg);

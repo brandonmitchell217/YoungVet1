@@ -26,35 +26,37 @@
   </head>
   <body onresize="sizeFunction()">
     <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <a href="index.html">
+        <img src="img/vetLogoOfficial1.png" alt="" />
+      </a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about1.html">About</a></li>
         <li><a href="media1.html">Media</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="index.html"
-        ><img src="img/vetLogoOfficial1.png" alt="Young Vet" class="navLogo"
-      /></a>
-
-      <div class="burger" id="burger">
-        <i class="fas fa-bars fa-2x"></i>
-      </div>
     </nav>
 
     <section class="media">
-      <div id="wrapper">
+      <!-- <div id="wrapper">
         <div id="slider-area" class="owl-carousel owl-theme owl-stage">
           <div
             class="item"
             style="background-image: url(img/mediaImg/VetHome3.jpg)"
           >
-            <button class="wrapBtn" id="wrapBtn1">Video / Stream</button>
+            <button class="wrapBtn" id="pacBtn">Stream / Download</button>
           </div>
           <div
             class="item"
-            style="background-image: url(img/mediaImg/VetHome4.jpg)"
+            style="background-image: url(img/mediaImg/VetHome5.jpg)"
           >
-            <button class="wrapBtn" id="wrapBtn2">Video / Stream</button>
+            <img src="img/talkToEmVetText.png" alt="" />
+            <img src="img/talkToEmText.png" alt="" />
           </div>
         </div>
         <div class="wrapLight" id="wrapLight1">
@@ -91,8 +93,44 @@
             >
           </div>
         </div>
+      </div> -->
+      <!-- <div class="mediaLanding">
+        <img src="img/pacmanText.png" alt="Pacman" />
+
+        <div class="videoBox">
+          <iframe
+            class="responsive-iframe"
+            src="https://www.youtube.com/embed/FuBlAdxwLLE?rel=0&modestbranding=1"
+            allow="fullscreen"
+          ></iframe>
+        </div>
+      </div> -->
+      <div class="mediaLanding1">
+        <div class="mediaLandingInner">
+          <div class="mediaLandingLeft">
+            <img src="img/pacPromoText.png" alt="" />
+            <div class="mediaLandingBtns">
+              <a href="#" class="promoBtn"
+                ><i class="fab fa-itunes"></i> iTunes</a
+              >
+              <a href="#" class="promoBtn"
+                ><i class="fab fa-spotify"></i> Spotify</a
+              >
+            </div>
+          </div>
+          <div class="mediaLandingRight">
+            <div class="videoBox">
+              <iframe
+                class="responsive-iframe"
+                src="https://www.youtube.com/embed/FuBlAdxwLLE?rel=0&modestbranding=1"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="outerOwl">
+        <div class="OwlOverlayTop"></div>
         <h1>Videos</h1>
         <div id="video-carousel" class="owl-carousel owl-theme">
           <div>
@@ -141,6 +179,7 @@
             <div class="owl-dot"><span></span></div>
           </div> -->
         </div>
+        <div class="owlOverlayBottom"></div>
       </div>
       <div class="imageOuter">
         <h1>Photos</h1>
@@ -158,6 +197,7 @@
             <img data-lity src="img/mediaImg/Vet8.jpg" alt="" />
           </div>
         </div>
+        <div class="mediaOverlayBottom"></div>
       </div>
     </section>
     <footer>
@@ -197,5 +237,6 @@
     <script src="lity/lity-2.4.1/dist/lity.min.js"></script>
     <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="main.js"></script>
+    <script src="main1.js"></script>
   </body>
 </html>

@@ -1,171 +1,186 @@
-.instagramWrap {
-  min-height: 100vh;
-  position: relative;
-  padding: 100px;
-}
-
-#mediaVideosWrap {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-#fbWrapper {
+.homeLanding {
   height: 100%;
   width: 100%;
-  padding-top: 120px;
-  /* display: none; */
-}
-
-/* Section */
-.section {
-  clear: both;
-  margin: 0px;
-  padding: 0px;
-}
-/* Column */
-.col {
-  text-align: center;
-  display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%;
-}
-.col:first-child {
-  margin-left: 0 !important;
-}
-
-.col img {
-  width: 380px;
-}
-
-/* Row */
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
-}
-.row {
-  zoom: 1; /* For IE 6/7 */
-}
-
-/* Grid */
-.grid_1_of_3 {
-  width: 32.267%;
-}
-.grid_2_of_3 {
-  width: 66.133%;
-}
-.grid_3_of_3 {
-  width: 100%;
-}
-
-/******* About *******/
-#banner1 {
-  height: 80vh;
   position: relative;
 }
 
-#banner1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 -80px 305px -60px var(--cultured);
-}
-
-#banner1 .banner1Img {
-  height: 100%;
-  width: 100%;
-  background-image: url(img/raleigh-downtown-sunset-2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-x: center;
-}
-
-.aboutBlock {
+.landingInner {
   height: 100vh;
-  padding: 3.5em 2.5em;
+  width: 100%;
   position: relative;
-  display: flex;
-  background: var(--cultured);
-  text-align: center;
+  background-image: url(img/Vet10.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.homeCarWrapper {
+  position: relative;
+  height: 100%;
+  /* padding: 3em 1em; */
+}
+.carWrapOuter {
+  height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
-.aboutBlock::after {
+#slider-area {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2em;
+}
+
+#slider-area .owl-item div {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.wrapBtn {
+  position: relative;
+  font-family: serif;
+  font-size: 24px;
+  letter-spacing: 1.8px;
+  color: #eee;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-shadow: -2px -2px 8px #fefefe;
+  cursor: pointer;
+}
+
+#pacBtn {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  transform: translate(-10%, -20%);
+}
+#talkToEmBtn {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform: translate(-10%, -20%);
+}
+
+#prayForMeBtn {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  transform: translate(-10%, -20%);
+}
+
+.wrapBtn::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: #eee;
+  transition: all 0.3s ease;
+}
+
+.wrapBtn:hover::after {
+  bottom: 0;
+}
+
+.wrapLight {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.centerWrapLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: 2px solid #fff;
+  background: #000;
+}
+
+.wrapLightImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 6px;
+}
+
+.wrapLightImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.6);
+}
+
+.centerWrapLight h4 {
+  width: 100%;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.wrapLightBtn {
+  position: relative;
+  padding: 15px 60px;
+  margin: 10px 0;
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px -5px #eee;
+}
+
+.wrapLightBtn::before {
   content: "";
   position: absolute;
-  top: -25px;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  background: linear-gradient(
-    to top,
-    transparent,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.4),
-    transparent
-  );
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 90%;
+  border: 2px solid #000;
+  border-radius: 30px;
 }
 
-.aboutBlock .containerLeft {
-  height: 100%;
-  min-width: 35%;
-  position: relative;
-}
-
-.aboutBlock .containerLeft img {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  position: absolute;
-  right: -10px;
-  z-index: 1;
-}
-
-.aboutBlock .containerRight {
-  height: 100%;
-  background-color: var(--cultured);
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-}
-
-.aboutBlock .containerRight .containerRight1 {
-  height: 33.4%;
-  padding: 2em 1em;
-  border-radius: 10px;
-}
-
-.aboutBlock .containerRight .containerRight1:first-of-type,
-.containerRight1:last-of-type {
-  background-color: var(--richBlack);
-  color: #fefefe;
-}
-
-.instaWrap {
-  height: 100vh;
-  padding: 0 3em;
-}
-
-.instaWrap h2 {
+.wrapLightBtn:hover {
+  background-color: #000;
   color: #fff;
-  text-align: center;
 }
-/* Full Width below 768 pixels */
-@media only screen and (max-width: 768px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-  [class*="grid_"] {
-    width: 100%;
-  }
+.wrapLightBtn:hover::before {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
 }

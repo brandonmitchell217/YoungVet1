@@ -17,18 +17,20 @@
   </head>
   <body>
     <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <a href="index.html">
+        <img src="img/vetLogoOfficial1.png" alt="" />
+      </a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about1.html">About</a></li>
         <li><a href="media1.html">Media</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="index.html">
-        <img src="img/vetLogoOfficial1.png" alt="Young Vet" class="navLogo" />
-      </a>
-      <div class="burger" id="burger">
-        <i class="fas fa-bars fa-2x"></i>
-      </div>
     </nav>
 
     <section class="contactWrapper">
@@ -39,10 +41,14 @@
         <div class="contactRight">
           <div class="contactInner">
             <h2>Contact</h2>
-            <form>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/05a48bf51ffc18dbf45162032b287f79"
+              method="POST"
+            >
               <input type="text" id="name" name="name" placeholder="Name" />
               <input
-                type="text"
+                type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
