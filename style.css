@@ -185,7 +185,8 @@ label #cancel {
   background-image: url(img/Vet10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  /* background-position: center top; */
+  background-position: 50% 50%;
   background-attachment: fixed;
   position: relative;
 }
