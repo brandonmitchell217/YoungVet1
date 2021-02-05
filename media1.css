@@ -626,4 +626,9 @@ div a:hover .owlVidBox {
   .mediaLanding1 {
     height: 100vh;
   }
+  .imageInner img {
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 0 10px #777;
+  }
 }
