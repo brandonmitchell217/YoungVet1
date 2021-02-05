@@ -186,8 +186,7 @@ label #cancel {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  /* background-position: 50% 50%; */
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -987,9 +986,9 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-  #homeLanding {
+  /* #homeLanding {
     background-size: 80%;
-  }
+  } */
   .promoSplit.left .pacPromoImg1 {
     width: var(--hover-width);
   }
