@@ -517,9 +517,6 @@ main .rectangle h2 span {
 }
 
 @media only screen and (max-width: 768px) {
-  main {
-    background-size: 90%;
-  }
   main .rectangle {
     padding: 0.8em 1.1em;
   }
