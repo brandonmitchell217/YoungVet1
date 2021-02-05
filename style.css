@@ -989,9 +989,9 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* #homeLanding {
+  #homeLanding {
     background-size: 80%;
-  } */
+  }
   .promoSplit.left .pacPromoImg1 {
     width: var(--hover-width);
   }
