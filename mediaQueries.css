@@ -1,0 +1,388 @@
+/* Home Page */
+@media only screen and (max-width: 768px) {
+  .prayForMePromo {
+    max-height: fit-content;
+    height: 205px;
+  }
+  .promoSplit {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .promoSplit.left {
+    top: 0;
+    background-image: url(img/VetHome1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .promoSplit.right {
+    bottom: 0;
+    background-image: url(img/VetHome2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .left .promoContentOverlay {
+    transform: translateY(-200%);
+    transition: transform 0.6s ease;
+  }
+  .right .promoContentOverlay {
+    transform: translateY(200%);
+    transition: transform 0.6s ease;
+  }
+
+  .hover-left .left .promoContentOverlay {
+    transform: translateY(0);
+  }
+
+  .hover-right .right .promoContentOverlay {
+    transform: translateY(0);
+  }
+  .hover-left .left {
+    width: 100%;
+  }
+  .hover-left .right {
+    width: 100%;
+  }
+  .hover-right .right {
+    width: 100%;
+  }
+  .hover-right .left {
+    width: 100%;
+  }
+  .promoSplit.right {
+    right: 0;
+    background-image: url(img/talkToEmThumb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .promoSplit.right img {
+    display: none;
+  }
+  .promoBtn {
+    padding: 10px 45px;
+    font-size: 18px;
+    box-shadow: -5px -5px 20px -5px #fefefe;
+  }
+
+  .promoBtn:hover {
+    transform: scale(0.98);
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    border: 1px solid #000;
+    box-shadow: 0 0 30px -5px #fefefe;
+  }
+  .pacVidPromo {
+    max-height: 200px;
+    height: fit-content;
+    max-width: auto;
+    width: 70%;
+  }
+  #homeGrid {
+    padding: 50px 0 100px;
+  }
+  footer img {
+    height: 40px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  .socialFoot a {
+    font-size: 13px;
+    margin: 0 2px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .promoSplit.left .pacPromoImg1 {
+    width: var(--hover-width);
+  }
+  .promoSplit.left .pacPromoImg2 {
+    width: var(--hover-width1);
+    top: 24vh;
+  }
+  .hover-left .left .pacPromoImg1 {
+    width: calc(var(--hover-width) - 10%);
+  }
+  .hover-left .left .pacPromoImg2 {
+    width: calc(var(--hover-width1) - 10%);
+    top: 28vh;
+  }
+  .hover-right .left .pacPromoImg2 {
+    top: 17vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav ul li {
+    margin: 0 1rem;
+  }
+  #homeLanding {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #homeLanding {
+    background-size: 80%;
+  }
+  .promoSplit.left .pacPromoImg1 {
+    width: var(--hover-width);
+  }
+  .promoSplit.left .pacPromoImg2 {
+    width: var(--hover-width1);
+    top: 25vh;
+  }
+  .hover-left .left .pacPromoImg1 {
+    width: calc(var(--hover-width) - 10%);
+  }
+  .hover-left .left .pacPromoImg2 {
+    width: calc(var(--hover-width1) - 10%);
+    top: 28.5vh;
+  }
+  .hover-right .left .pacPromoImg2 {
+    top: 18vh;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .promoSplit.left .pacPromoImg2 {
+    width: var(--hover-width1);
+    top: 27vh;
+  }
+  .hover-left .left .pacPromoImg2 {
+    width: calc(var(--hover-width1) - 10%);
+    top: 31vh;
+  }
+  .hover-right .left .pacPromoImg2 {
+    top: 18vh;
+  }
+}
+
+/* About Page */
+/* Full Width below 768 pixels */
+@media only screen and (max-width: 768px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  [class*="grid_"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    min-width: 100%;
+  }
+  .aboutText {
+    padding: 6em 0 1em 0;
+  }
+  .aboutText p {
+    padding: 1em 4em 0;
+    margin-top: 40px;
+    text-align: left;
+    text-indent: 30px;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  }
+  .aboutText p:last-of-type {
+    padding: 0 4em 1.75em;
+    margin-top: 20px;
+    margin-bottom: 10em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .rectangle {
+    padding: 0.8em 1.1em;
+  }
+  .starBox {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #aboutMain {
+    display: none;
+  }
+} */
+@media (orientation: landscape) {
+  main {
+    background-position: 40%;
+    clip-path: none;
+    padding-top: 100px;
+  }
+  .toAbout {
+    margin-top: 20px;
+  }
+  main .rectangle {
+    /* width: 350px; */
+    padding: 1em 1.5em;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .OwlOverlayTop {
+    position: absolute;
+    top: -58%;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/randomOverlay1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .owlOverlayBottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -58%;
+    left: 0;
+    z-index: -1;
+    background-image: url(img/randomOverlay1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+  .mediaOverlayBottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -42%;
+    left: 0;
+    background-image: url(img/randomOverlay1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mediaOverlayBottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -42%;
+    left: 0;
+    background-image: url(img/randomOverlay1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .imageInner {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mediaOverlayBottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -46%;
+    left: 0;
+    background-image: url(img/randomOverlay1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .videoBox {
+    height: 50%;
+    width: 90%;
+  }
+  .mediaLandingInner .mediaLandingLeft img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .mediaLandingInner {
+    padding: 0;
+  }
+  .mediaLandingInner .mediaLandingLeft img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .mediaLandingInner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .mediaLandingLeft {
+    width: 100%;
+    height: 35%;
+    /* padding-bottom: 3em; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mediaLandingRight {
+    width: 100%;
+    height: 45%;
+    margin-right: 2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mediaLandingInner .mediaLandingLeft img {
+    width: auto;
+    height: 60%;
+    /* margin-bottom: 20px; */
+  }
+  .videoBox {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+  .mediaLandingBtns {
+    flex-direction: row;
+  }
+  .mediaLandingBtns .promoBtn {
+    margin: 0 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mediaLanding1 {
+    height: 100vh;
+  }
+  .imageInner img {
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 0 10px #777;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .mediaLandingInner {
+    flex-direction: inherit;
+  }
+  .mediaLandingInner .mediaLandingLeft img {
+    width: inherit;
+    height: auto;
+  }
+}
