@@ -10,10 +10,9 @@ main {
   justify-content: center;
   align-items: center;
   background: url("img/vetStreet.jpg");
-  /* background: url("https://images.unsplash.com/photo-1526870785157-7bcfdcaf5cef?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2014&q=80"); */
   background-size: cover;
   background-position: center center;
-  clip-path: circle(200vh at 50% -110%);
+  /* clip-path: circle(200vh at 50% -110%); */
   overflow: hidden;
 }
 
@@ -26,7 +25,7 @@ main::before {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 -20px 70px -20px var(--cultured);
+  box-shadow: inset 0 -20px 70px -20px var(--richBlack);
 }
 
 .circleBorder1 {
@@ -99,28 +98,6 @@ main .rectangle h2 {
   overflow-x: hidden;
 }
 
-main .rectangle h2::before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  right: 3.5px;
-  transform: translateY(-50%);
-  height: 5px;
-  width: 98%;
-  border-radius: 30%;
-  background: linear-gradient(
-    to top,
-    rgba(186, 24, 27, 1) 30%,
-    rgba(186, 24, 27, 0.75),
-    rgba(186, 24, 27, 0.3),
-    rgba(186, 24, 27, 0.1),
-    transparent
-  );
-  box-shadow: none;
-  animation: lineThrough 3.75s forwards;
-  transition: all 0.3s ease;
-}
-
 @keyframes lineThrough {
   0% {
     right: 150%;
@@ -138,15 +115,6 @@ main .rectangle h2::before {
   }
 }
 
-object {
-  margin: 0;
-  /* filter: drop-shadow(0 5px 30px var(--carnelianRed)); */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 main .rectangle h2 span {
   font-weight: 700;
   font-size: 2.5rem;
@@ -154,6 +122,15 @@ main .rectangle h2 span {
   filter: drop-shadow(-3px -1px 3px rgba(245, 243, 244, 0.6));
   text-shadow: -3px -1px 4px #eee;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+
+object {
+  margin: 0;
+  filter: drop-shadow(0 5px 30px var(--carnelianRedRGB));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .aboutSocial {
@@ -340,6 +317,7 @@ main .rectangle h2 span {
 }
 
 .aboutText {
+  margin-top: 4vh;
   padding: 12em 0 5.5em 0;
   position: relative;
   overflow: hidden;

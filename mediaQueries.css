@@ -176,6 +176,10 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+   .aboutText {
+      padding: 15em 10em 10em;
+}
 @media only screen and (max-width: 992px) {
   main {
     min-width: 100%;
@@ -208,6 +212,11 @@
   .starBox {
     width: 100%;
     font-size: 28px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main {
+    background-position: 40%;
   }
 }
 /* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
